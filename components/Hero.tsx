@@ -1,40 +1,37 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
-    <header className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/hero-campo.jpg"
-          alt="Campo de trigo en Lincoln, Argentina al atardecer"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/40 to-transparent" />
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <div className="lg:col-span-8 space-y-8">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-on-surface tracking-tight leading-[1.1]">
-            El recurso más valioso de tu campo,{" "}
-            <span className="text-primary">ahora al alcance de tu mano.</span>
-          </h1>
-          <p className="text-xl text-on-surface-variant max-w-2xl font-body leading-relaxed">
-            Conectamos el talento rural verificado con las estancias más
-            exigentes de la región de Lincoln. Calidad humana y técnica para la
-            próxima campaña.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary-container transition-all">
-              Necesito personal calificado
-              <span className="material-symbols-outlined">agriculture</span>
-            </button>
-            <button className="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-md font-bold text-lg flex items-center justify-center gap-2 hover:bg-secondary-fixed transition-all">
-              Busco trabajo en el campo
-              <span className="material-symbols-outlined">person_search</span>
-            </button>
-          </div>
+    <header
+      id="inicio"
+      className="relative min-h-screen flex items-center pt-20"
+      style={{
+        background:
+          "linear-gradient(135deg, #0d2b0a 0%, #154212 60%, #1e5a18 100%)",
+      }}
+    >
+      <div className="max-w-4xl mx-auto px-6 py-20">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
+          ¿Necesitás un maquinista para la próxima campaña{" "}
+          <span className="text-primary-fixed">y no lo conseguís?</span>
+        </h1>
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed">
+          Conectamos productores y contratistas del noroeste bonaerense con
+          trabajadores rurales verificados. Vos nos decís qué necesitás,
+          nosotros te conseguimos a alguien con referencias chequeadas en 48
+          horas.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <a
+            href="#productores"
+            className="bg-primary-fixed text-on-primary-fixed px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-primary-fixed-dim transition-colors"
+          >
+            Contanos qué personal necesitás
+          </a>
+          <a
+            href="#trabajadores"
+            className="border-2 border-white/40 text-white px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-white/10 transition-colors"
+          >
+            Busco trabajo en el campo
+          </a>
         </div>
       </div>
     </header>

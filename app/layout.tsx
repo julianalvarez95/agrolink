@@ -15,13 +15,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Agencia de Empleo Rural Lincoln | Talento Rural Verificado",
+  title: "AgroLink | Personal Rural Verificado en 48 horas",
   description:
-    "Conectamos el talento rural verificado con las estancias más exigentes de la región de Lincoln. Bolsa de trabajo, capacitación y alianzas regionales.",
+    "Conseguís maquinistas, tractoristas y operarios rurales verificados para tu campo en el noroeste bonaerense. Referencias chequeadas, contacto directo, en 48 horas.",
   openGraph: {
-    title: "Agencia de Empleo Rural Lincoln",
+    title: "AgroLink | Personal Rural Verificado en 48 horas",
     description:
-      "El recurso más valioso de tu campo, ahora al alcance de tu mano.",
+      "Vos nos decís qué necesitás, nosotros te conseguimos a alguien con referencias chequeadas en 48 horas.",
     locale: "es_AR",
     type: "website",
   },
@@ -33,12 +33,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${manrope.variable} ${inter.variable}`}>
+    <html
+      lang="es"
+      className={`scroll-smooth ${manrope.variable} ${inter.variable}`}
+    >
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
           rel="stylesheet"
         />
+        {/* Tally embed — habilita dynamicHeight en los iframes */}
+        <script src="https://tally.so/widgets/embed.js" async={true} />
       </head>
       <body>{children}</body>
     </html>

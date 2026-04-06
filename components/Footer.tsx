@@ -1,27 +1,32 @@
 export default function Footer() {
   return (
-    <footer className="bg-surface-container-low w-full py-12 px-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-7xl mx-auto">
-        <div className="text-lg font-bold text-on-surface font-headline">
-          Agencia de Empleo Rural
-        </div>
-        <div className="text-on-surface/60 font-body text-sm uppercase tracking-wider text-center">
-          © 2024 Agencia de Empleo Rural Lincoln. El Terreno de las
-          Oportunidades.
-        </div>
-        <div className="flex justify-end space-x-6 text-on-surface/60 font-body text-xs uppercase tracking-widest">
-          <a href="#" className="hover:text-primary transition-all">
-            WhatsApp
-          </a>
-          <a href="#" className="hover:text-primary transition-all">
-            Ubicación
-          </a>
+    <footer className="bg-primary text-on-primary py-12 px-6">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-8">
+          <div>
+            <div className="text-2xl font-black font-headline mb-2">
+              AgroLink
+            </div>
+            <p className="text-white/70 text-sm max-w-sm leading-relaxed">
+              Conectando el talento rural con el campo que lo necesita.
+            </p>
+          </div>
           <a
-            href="#"
-            className="hover:text-primary transition-all underline text-primary"
+            href="https://wa.me/+5491136260707"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-primary-fixed hover:text-white transition-colors font-semibold text-sm"
           >
-            Términos y Condiciones
+            <span className="material-symbols-outlined text-lg">chat</span>
+            WhatsApp de contacto
           </a>
+        </div>
+
+        <div className="border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
+          <p>
+            Articulamos con INTA Lincoln · Sociedad Rural · Cooperativas locales
+          </p>
+          <p>© 2026 AgroLink</p>
         </div>
       </div>
     </footer>
