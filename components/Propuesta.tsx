@@ -24,11 +24,10 @@ export default function Propuesta() {
     <section className="py-20 bg-surface">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-black text-on-surface mb-3">
-          Cómo te ayudamos
+          Esto es lo que estamos construyendo
         </h2>
         <p className="text-on-surface-variant mb-12 text-lg">
-          Sin app, sin algoritmos. Personas que verifican referencias y conectan
-          gente.
+          Todavía no lanzamos, pero esto es lo que tenemos en mente:
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">

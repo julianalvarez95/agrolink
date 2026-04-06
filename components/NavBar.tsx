@@ -5,7 +5,6 @@ import { useState } from "react";
 const links = [
   { label: "Productores", href: "#productores", external: false },
   { label: "Trabajadores", href: "#trabajadores", external: false },
-  { label: "Contacto", href: "https://wa.me/TUNUMERO", external: true },
 ];
 
 export default function NavBar() {
@@ -34,6 +33,12 @@ export default function NavBar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="#actores"
+            className="bg-primary text-on-primary px-5 py-2 rounded-lg font-bold text-sm hover:bg-primary-container transition-colors"
+          >
+            Anotate
+          </a>
         </div>
 
         {/* Mobile hamburger */}

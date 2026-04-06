@@ -1,3 +1,5 @@
+import PreLaunchBadge from "@/components/PreLaunchBadge";
+
 const TALLY_TRABAJADORES_URL =
   "https://tally.so/embed/GxDagj?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1";
 
@@ -9,14 +11,21 @@ const beneficios = [
 
 export default function Trabajadores() {
   return (
-    <section id="trabajadores" className="py-20 bg-surface-container-low scroll-mt-20">
+    <section
+      id="trabajadores"
+      className="py-20 scroll-mt-20"
+      style={{ backgroundColor: "#fbf2ec" }}
+    >
       <div className="max-w-3xl mx-auto px-6">
+        <div className="mb-6">
+          <PreLaunchBadge />
+        </div>
         <h2 className="text-3xl md:text-4xl font-black text-on-surface mb-3">
-          ¿Buscás trabajo en el campo?
+          Buscás trabajo en el campo
         </h2>
         <p className="text-on-surface-variant mb-6 text-lg">
-          Registrate en nuestra base. Te conectamos con productores y
-          contratistas de la zona que buscan gente con ganas de laburar.
+          Anotate en la lista. Cuando lancemos, vas a ser de los primeros en
+          recibir oportunidades de trabajo en la región.
         </p>
 
         <ul className="space-y-3 mb-10">
@@ -34,7 +43,7 @@ export default function Trabajadores() {
           src={TALLY_TRABAJADORES_URL}
           width="100%"
           height="600"
-          title="Formulario para trabajadores — AgroLink"
+          title="Lista de espera trabajadores — AgroLink"
           loading="lazy"
           style={{ border: "none", minHeight: "500px" }}
         />

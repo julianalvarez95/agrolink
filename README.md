@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AgroLink — Personal Rural Verificado
 
-## Getting Started
+> Conectamos productores y contratistas del noroeste bonaerense con trabajadores rurales verificados.
 
-First, run the development server:
+---
+
+## El problema
+
+En la región pampeana, el 70% de los productores tiene dificultades para conseguir personal calificado en momentos pico de campaña. Los maquinistas, peones y operarios existen — pero no hay un canal confiable para encontrarlos. La contratación informal, sin referencias chequeadas ni respaldo legal, genera fricciones costosas para ambas partes.
+
+AgroLink nació para resolver eso.
+
+---
+
+## Qué es AgroLink
+
+Un servicio de intermediación laboral rural especializado en el noroeste bonaerense. Sin app, sin algoritmos. Personas que verifican referencias y conectan gente.
+
+- **Para productores y contratistas:** conseguís personal verificado (3 referencias chequeadas) en 48 horas.
+- **Para trabajadores rurales:** accedés a oportunidades de trabajo continuas, acompañamiento con la Libreta de Trabajo Rural y registro en RENATRE.
+
+Articulamos con INTA Lincoln, la Sociedad Rural y cooperativas locales de la región.
+
+---
+
+## Estado actual: Pre-lanzamiento
+
+Esta web es una **landing de validación**. Estamos circulándola entre actores de la cadena productiva para medir interés real antes de operar a escala.
+
+Si llegaste hasta acá y trabajás en el agro — como productor, contratista o trabajador rural — tu opinión define cómo construimos esto.
+
+---
+
+## Stack
+
+- **Framework:** Next.js 16 (App Router, static export)
+- **UI:** React 19 + Tailwind CSS 4
+- **Tipografía:** Manrope (headlines) + Inter (body)
+- **Formularios:** Tally (embeds)
+- **Analytics:** Vercel Analytics
+- **Deploy:** Vercel
+
+---
+
+## Desarrollo local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estructura
 
-## Learn More
+```
+app/
+  page.tsx          — Composición de secciones
+  layout.tsx        — Metadata, fuentes, analytics
+  globals.css       — Design system (tokens, Tailwind 4)
+components/
+  Hero.tsx          — Sección principal con mensaje pre-launch
+  Problema.tsx      — Estadísticas del problema
+  Actores.tsx       — Selección de perfil (productor / trabajador)
+  FormularioProductores.tsx — Lista de espera para empleadores
+  Trabajadores.tsx  — Lista de espera para trabajadores
+  Propuesta.tsx     — Qué estamos construyendo
+  Calendario.tsx    — Calendario agrícola regional
+  Feedback.tsx      — Formulario de feedback cualitativo
+  Footer.tsx        — Pie de página
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Producción
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[agrolink-oficial.vercel.app](https://agrolink-oficial.vercel.app)

@@ -1,3 +1,5 @@
+import PreLaunchBadge from "@/components/PreLaunchBadge";
+
 export default function Hero() {
   return (
     <header
@@ -9,30 +11,23 @@ export default function Hero() {
       }}
     >
       <div className="max-w-4xl mx-auto px-6 py-20">
+        <div className="mb-8">
+          <PreLaunchBadge />
+        </div>
         <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
-          ¿Necesitás un maquinista para la próxima campaña{" "}
-          <span className="text-primary-fixed">y no lo conseguís?</span>
+          Conectamos personal rural verificado{" "}
+          <span className="text-primary-fixed">con quienes lo necesitan</span>
         </h1>
         <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed">
-          Conectamos productores y contratistas del noroeste bonaerense con
-          trabajadores rurales verificados. Vos nos decís qué necesitás,
-          nosotros te conseguimos a alguien con referencias chequeadas en 48
-          horas.
+          Estamos construyendo AgroLink y queremos hacerlo bien. Contanos qué
+          necesitás antes de lanzar — tu experiencia define el servicio.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <a
-            href="#productores"
-            className="bg-primary-fixed text-on-primary-fixed px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-primary-fixed-dim transition-colors"
-          >
-            Contanos qué personal necesitás
-          </a>
-          <a
-            href="#trabajadores"
-            className="border-2 border-white/40 text-white px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-white/10 transition-colors"
-          >
-            Busco trabajo en el campo
-          </a>
-        </div>
+        <a
+          href="#actores"
+          className="inline-block bg-primary-fixed text-on-primary-fixed px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-primary-fixed-dim transition-colors"
+        >
+          Anotate en la lista
+        </a>
       </div>
     </header>
   );

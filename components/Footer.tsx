@@ -8,7 +8,8 @@ export default function Footer() {
               AgroLink
             </div>
             <p className="text-white/70 text-sm max-w-sm leading-relaxed">
-              Conectando el talento rural con el campo que lo necesita.
+              En construcción. Estamos validando con productores y trabajadores
+              del noroeste bonaerense.
             </p>
           </div>
           <a
