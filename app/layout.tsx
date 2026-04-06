@@ -16,11 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}`
-      : "http://localhost:3000"
-  ),
+  metadataBase: new URL("https://agrolink-oficial.vercel.app"),
   title: "AgroLink | Personal Rural Verificado en 48 horas",
   description:
     "Conseguís maquinistas, tractoristas y operarios rurales verificados para tu campo en el noroeste bonaerense. Referencias chequeadas, contacto directo, en 48 horas.",
